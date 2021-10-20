@@ -1,0 +1,119 @@
+.content {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.Modal {
+  background: #30343a73;
+  border-radius: 8px;
+  @apply border border-gray-700 shadow-lg;
+  h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+  h6 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+  form {
+    .emailInput {
+      margin-bottom: 15px;
+    }
+    textarea {
+      outline: none;
+      background-color: #181c22;
+      border-radius: 8px;
+      color: #ffffff;
+      resize: none;
+      @apply transition-all duration-500 ease-in-out;
+    }
+    textarea:focus {
+      filter: drop-shadow(0 0 0.5rem #3d4457);
+    }
+    input {
+      outline: none;
+      background-color: #181c22;
+      border-radius: 8px;
+      color: #ffffff;
+      @apply transition-all duration-500 ease-in-out;
+    }
+    input:focus {
+      filter: drop-shadow(0 0 0.5rem #3d4457);
+    }
+    input:checked + svg {
+      display: block;
+    }
+    label {
+      span {
+        width: 293.93px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #ffffff;
+        margin-top: 29px;
+      }
+    }
+  }
+}
+
+.innerModal {
+  padding: 30px;
+  margin: 0 auto;
+  display: block;
+}
+
+.forgotPass {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.inlinetext {
+  a {
+    margin-left: 3px;
+    text-decoration: underline;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: red;
+  }
+}
+
+.auth {
+  margin-top: 32.42px;
+  a:nth-child(-n + 2) {
+    padding-right: 42px;
+  }
+}
+
+.error {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ed1c24;
+}

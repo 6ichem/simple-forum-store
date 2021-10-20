@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  font-family: "Inconsolata", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #181c22;
+  color: #eeeeee;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.contain {
+  @apply w-full p-5 cursor-pointer transition-all duration-500 ease-in-out my-1;
+  background-color: #181c22;
+}
+
+.contain:hover {
+  @apply opacity-70;
+}

@@ -1,0 +1,40 @@
+.Login {
+  @apply w-screen h-screen flex flex-col text-center justify-center items-center px-5 md:px-0;
+}
+
+.LoginTitle {
+  @apply text-white text-3xl font-semibold mb-1;
+}
+
+.LoginSub {
+  @apply text-gray-500 text-base;
+}
+
+.LoginInput {
+  @apply w-full p-5 rounded-lg outline-none focus:outline-none text-gray-400 placeholder-gray-400 text-xs my-3;
+  background-color: rgba(48, 52, 58, 0.45);
+  transition: all 400ms ease-in-out;
+}
+
+.LoginLayout {
+  @apply max-w-md;
+}
+
+.LoginInput:focus {
+  background-color: rgb(23, 25, 27);
+  filter: drop-shadow(0 0 0.5rem #3d4457);
+}
+
+.PrimaryButton {
+  @apply text-white font-bold py-3 rounded w-full mt-3 outline-none focus:outline-none;
+  background-color: #6054dc;
+  transition: all 400ms ease-in-out;
+}
+
+.PrimaryButton:hover {
+  background-color: #5147bd;
+}
+
+.Link {
+  @apply ml-1 text-blue-500 transition-all duration-500 ease-in-out hover:text-blue-400;
+}
